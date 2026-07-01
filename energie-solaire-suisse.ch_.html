@@ -2,37 +2,33 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Index de Ressources et Partenariats Officiels - https://energie-solaire-suisse.ch/</title>
-  <meta name="description" content="Index officiel de ressources et maillage d'autorité local pour le domaine https://energie-solaire-suisse.ch/.">
+  <title>Guide pratique : Solaire Suisse</title>
+  <meta name="description" content="Repères clairs pour comprendre solaire suisse, comparer les informations utiles et consulter les ressources associées à energie solaire suisse.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Inter', sans-serif; padding: 2.5rem; background: #07080e; color: #f3f4f6; max-width: 1000px; margin: 0 auto; line-height: 1.6; }
-    h1 { font-family: 'Outfit', sans-serif; font-size: 2.2rem; font-weight: 800; background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 0.75rem; }
-    h2 { font-family: 'Outfit', sans-serif; font-size: 1.4rem; color: #a78bfa; margin-top: 2.5rem; margin-bottom: 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.25rem; }
-    .content-box { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); padding: 1.75rem; border-radius: 16px; margin-bottom: 2.5rem; font-size: 1.05rem; color: #e5e7eb; text-align: justify; }
-    
-    /* Navigation Silo Cards */
-    .silo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; margin-bottom: 2.5rem; }
-    .silo-card { background: linear-gradient(135deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.005) 100%); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1.5rem; text-align: center; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 140px; }
-    .silo-card:hover { border-color: rgba(96, 165, 250, 0.4); background: rgba(96, 165, 250, 0.03); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
-    .silo-card h3 { font-family: 'Outfit', sans-serif; font-size: 1.15rem; color: #60a5fa; margin-top: 0.5rem; margin-bottom: 0.5rem; }
-    .silo-card p { font-size: 0.8rem; color: #9ca3af; margin: 0; }
-    .silo-link { margin-top: auto; color: #a78bfa; text-decoration: none; font-size: 0.85rem; font-weight: 600; padding: 0.4rem 1rem; border-radius: 8px; background: rgba(167, 139, 250, 0.1); border: 1px solid rgba(167, 139, 250, 0.15); transition: all 0.2s ease; width: 80%; display: inline-block; }
-    .silo-card:hover .silo-link { background: #a78bfa; color: #07080e; }
-
-    /* FAQ Styling */
-    .faq-container { background: rgba(255, 255, 255, 0.01); border: 1px solid rgba(255, 255, 255, 0.03); border-radius: 16px; padding: 1.75rem; margin-bottom: 2.5rem; }
-    .faq-item { margin-bottom: 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.03); padding-bottom: 1.25rem; }
-    .faq-item:last-child { margin-bottom: 0; border-bottom: none; padding-bottom: 0; }
-    .faq-question { font-family: 'Outfit', sans-serif; font-size: 1.1rem; color: #60a5fa; font-weight: 600; margin-bottom: 0.5rem; }
-    .faq-answer { font-size: 0.95rem; color: #d1d5db; }
-
-    /* Partner block */
-    .partner-block { margin-top: 1.75rem; border-top: 1px solid rgba(255, 255, 255, 0.06); padding-top: 1.25rem; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem; }
-    .partner-link { color: #60a5fa; text-decoration: underline; font-weight: 600; transition: color 0.2s ease; }
-    .partner-link:hover { color: #93c5fd; }
+    :root { color-scheme: dark; --bg: #0b0f14; --panel: #121822; --line: #253041; --text: #f4f7fb; --muted: #aab6c5; --blue: #7dd3fc; --green: #86efac; --amber: #fcd34d; }
+    * { box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; padding: 2rem; background: var(--bg); color: var(--text); max-width: 1060px; margin: 0 auto; line-height: 1.7; }
+    h1, h2, h3 { font-family: 'Outfit', sans-serif; letter-spacing: 0; }
+    h1 { font-size: clamp(2rem, 4vw, 3.3rem); line-height: 1.08; margin: 1.2rem 0 1rem; max-width: 850px; }
+    h2 { font-size: 1.45rem; color: var(--green); margin-top: 2.4rem; margin-bottom: 1rem; }
+    h3 { margin: 0 0 0.45rem; color: var(--blue); font-size: 1.05rem; }
+    p { margin: 0 0 1rem; }
+    .eyebrow { color: var(--amber); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+    .content-box { background: var(--panel); border: 1px solid var(--line); padding: 1.6rem; border-radius: 8px; margin: 1.5rem 0 2rem; color: #e6edf6; }
+    .content-box p:last-child { margin-bottom: 0; }
+    .text-link { color: var(--blue); font-weight: 700; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .section-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+    .section-card { background: #0f151e; border: 1px solid var(--line); border-radius: 8px; padding: 1rem; min-height: 150px; display: flex; flex-direction: column; }
+    .section-card p { color: var(--muted); font-size: 0.92rem; }
+    .section-link { margin-top: auto; color: var(--green); font-size: 0.92rem; font-weight: 700; text-decoration: none; }
+    .section-link:hover { text-decoration: underline; }
+    .faq-container { display: grid; gap: 0.9rem; margin-bottom: 2.4rem; }
+    .faq-item { background: #0f151e; border: 1px solid var(--line); border-radius: 8px; padding: 1rem; }
+    .faq-item p { color: #d8e1eb; margin-bottom: 0; }
+    @media (max-width: 680px) { body { padding: 1.1rem; } .content-box { padding: 1.1rem; } }
   </style>
   <script type="application/ld+json">
     {
@@ -41,26 +37,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Quel est l'objectif de cet index de ressources ?",
+      "name": "Que faut-il comprendre avant de comparer des solutions liées à solaire suisse ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ce portail permet de structurer les points de redirection et d'autorité pour le site https://energie-solaire-suisse.ch/. Il facilite l'indexation de ses pages de destination en servant de plaque tournante sémantique."
+        "text": "Il faut regarder le contexte réel, les besoins prioritaires, les contraintes locales et les informations vérifiables avant de comparer les solutions disponibles."
       }
     },
     {
       "@type": "Question",
-      "name": "Comment fonctionne le ciblage régional des moteurs ?",
+      "name": "Pourquoi le contexte local compte-t-il ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Les liens de recherche présentés ici sont configurés pour orienter les robots de crawl vers les versions nationales et linguistiques appropriées, assurant ainsi une cohérence locale maximale."
+        "text": "Les habitudes, les règles, les attentes et les ressources disponibles peuvent changer d'une région à l'autre. Le contexte local permet donc de lire les informations avec plus de précision."
       }
     },
     {
       "@type": "Question",
-      "name": "Est-ce que ce portail est mis à jour régulièrement ?",
+      "name": "Comment utiliser ce dossier ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Oui, les points d'accès et d'autorité sont mis à jour périodiquement pour suivre l'évolution des algorithmes de recherche et maintenir la visibilité sémantique."
+        "text": "Le dossier sert de point de départ pour comprendre le sujet, consulter des repères complémentaires et accéder aux informations propres au domaine étudié."
       }
     }
   ]
@@ -69,57 +65,57 @@
 </head>
 <body>
 
-  <h1>Index de Ressources et Partenariats Officiels - https://energie-solaire-suisse.ch/</h1>
+  <div class="eyebrow">Solaire Suisse</div>
+  <h1>Guide pratique : Solaire Suisse</h1>
   <div class="content-box">
-    Bienvenue sur le portail de ressources et de maillage thématique dédié au domaine <strong>https://energie-solaire-suisse.ch/</strong>. Cette page répertorie un index structuré de points de recherche, de redirection d'autorité et de partenariats officiels mis en œuvre pour accroître la visibilité organique du projet sur les principaux moteurs de recherche mondiaux et régionaux. En ciblant des thématiques proches de <em>solaire suisse, energie solaire, genève solution, panneaux, nettoyage</em>, nous favorisons le crawl sémantique par les robots de recherche pour un meilleur netlinking local.
     
-    <div class="partner-block">
-      <span>🌐 Site officiel recommandé :</span>
-      <a href="https://energie-solaire-suisse.ch/" target="_blank" class="partner-link">Expert en thématiques solaire suisse, energie solaire, genève solution, panneaux, nettoyage</a>
-    </div>
+        <p>Solaire Suisse regroupe des pratiques, des critères de choix et des informations utiles qui varient selon le contexte local, le niveau de besoin et les solutions disponibles. Un dossier clair aide à distinguer les points essentiels, les sources complémentaires et les éléments à vérifier avant de prendre une décision.</p>
+        <p>Pour aborder le sujet de manière concrète, il est utile de partir des besoins réels, du contexte local et des éléments vérifiables. Dans cette logique, <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener" class="text-link">guide sur solaire suisse</a> constitue une ressource centrale pour consulter les informations propres à https://energie-solaire-suisse.ch/.</p>
+        <p>Ce dossier rassemble les repères essentiels autour de <strong>solaire suisse</strong> : définitions, points de comparaison, sources complémentaires et pistes de lecture. L'objectif est de proposer une page structurée, lisible et proche d'un article de référence, plutôt qu'une simple liste de liens.</p>
+      
   </div>
 
-  <h2>📂 Index des Sections & Réseaux de Recherche</h2>
-  <div class="silo-grid">
-    <div class="silo-card">
-      <h3>Index Régional</h3>
-      <p>Moteurs locaux francophones</p>
-      <a href="energie-solaire-suisse.ch__moteurs_locaux.html" class="silo-link" style="margin-top: 1rem;">Visiter la section</a>
-    </div>
+  <h2>Sections du dossier</h2>
+  <div class="section-grid">
     
-    <div class="silo-card">
-      <h3>Index International</h3>
-      <p>Moteurs globaux & multilingues</p>
-      <a href="energie-solaire-suisse.ch__moteurs_globaux.html" class="silo-link" style="margin-top: 1rem;">Visiter la section</a>
-    </div>
-    <div class="silo-card">
-      <h3>Autorités Référentes</h3>
-      <p>Portails d'institutions & médias</p>
-      <a href="energie-solaire-suisse.ch__autorites.html" class="silo-link" style="margin-top: 1rem;">Visiter la section</a>
-    </div>
-    <div class="silo-card">
-      <h3>Réseaux & Partages</h3>
-      <p>Plateformes de diffusion</p>
-      <a href="energie-solaire-suisse.ch__reseaux.html" class="silo-link" style="margin-top: 1rem;">Visiter la section</a>
-    </div>
+    <article class="section-card">
+      <h3>Contexte local</h3>
+      <p>repères pratiques et contexte francophone</p>
+      <a href="energie-solaire-suisse.ch__contexte_local.html" class="section-link">Lire la section</a>
+    </article>
+    <article class="section-card">
+      <h3>Ouverture internationale</h3>
+      <p>comparaisons et usages hors marché local</p>
+      <a href="energie-solaire-suisse.ch__ouverture_internationale.html" class="section-link">Lire la section</a>
+    </article>
+    <article class="section-card">
+      <h3>Sources de référence</h3>
+      <p>institutions, médias et documents utiles</p>
+      <a href="energie-solaire-suisse.ch__sources_reference.html" class="section-link">Lire la section</a>
+    </article>
+    <article class="section-card">
+      <h3>Communautés et partage</h3>
+      <p>plateformes publiques et lieux de discussion</p>
+      <a href="energie-solaire-suisse.ch__communautes.html" class="section-link">Lire la section</a>
+    </article>
   </div>
 
   
-  <h2><span style="color: #60a5fa;">✦</span> Questions Fréquentes & Informations Clés</h2>
+  <h2>Questions fréquentes</h2>
   <div class="faq-container">
     
-    <div class="faq-item">
-      <div class="faq-question">Quel est l'objectif de cet index de ressources ?</div>
-      <div class="faq-answer">Ce portail permet de structurer les points de redirection et d'autorité pour le site https://energie-solaire-suisse.ch/. Il facilite l'indexation de ses pages de destination en servant de plaque tournante sémantique.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">Comment fonctionne le ciblage régional des moteurs ?</div>
-      <div class="faq-answer">Les liens de recherche présentés ici sont configurés pour orienter les robots de crawl vers les versions nationales et linguistiques appropriées, assurant ainsi une cohérence locale maximale.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">Est-ce que ce portail est mis à jour régulièrement ?</div>
-      <div class="faq-answer">Oui, les points d'accès et d'autorité sont mis à jour périodiquement pour suivre l'évolution des algorithmes de recherche et maintenir la visibilité sémantique.</div>
-    </div>
+    <article class="faq-item">
+      <h3>Que faut-il comprendre avant de comparer des solutions liées à solaire suisse ?</h3>
+      <p>Il faut regarder le contexte réel, les besoins prioritaires, les contraintes locales et les informations vérifiables avant de comparer les solutions disponibles.</p>
+    </article>
+    <article class="faq-item">
+      <h3>Pourquoi le contexte local compte-t-il ?</h3>
+      <p>Les habitudes, les règles, les attentes et les ressources disponibles peuvent changer d'une région à l'autre. Le contexte local permet donc de lire les informations avec plus de précision.</p>
+    </article>
+    <article class="faq-item">
+      <h3>Comment utiliser ce dossier ?</h3>
+      <p>Le dossier sert de point de départ pour comprendre le sujet, consulter des repères complémentaires et accéder aux informations propres au domaine étudié.</p>
+    </article>
   </div>
 
 </body>

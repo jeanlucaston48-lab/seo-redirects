@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Sources de référence - energie solaire suisse</title>
-  <meta name="description" content="Guide éditorial sur les panneaux solaires en Suisse, le nettoyage photovoltaïque, l’autoconsommation et les critères à vérifier avant de comparer les solutions.">
+  <meta name="description" content="Découvrez comment l&#39;énergie solaire s&#39;implante en Suisse. Découvrez les panneaux photovoltaïques, l&#39;autoconsommation et les solutions de stockage, avec des informations claires et des retours d&#39;expérience.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
@@ -19,18 +19,18 @@
     .nav-back:hover { text-decoration: underline; }
     .content-box { background: var(--panel); border: 1px solid var(--line); padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; color: #e6edf6; }
     .content-box p:last-child { margin-bottom: 0; }
-    .text-link, .reading-list a { color: var(--blue); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+    .text-link, .reading-list a, .resource-article a { color: var(--blue); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
     .reading-list, .access-map { background: #0f151e; border: 1px solid var(--line); border-radius: 8px; padding: 1.2rem 1.4rem; margin-bottom: 2.5rem; }
     .reading-list p { color: var(--muted); margin-bottom: 0.85rem; }
     .reading-list ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.45rem; }
     .access-map p { color: var(--muted); margin-bottom: 1rem; }
-    .access-map ol { margin: 0; padding-left: 1.2rem; columns: 2; column-gap: 2rem; }
-    .access-map li { break-inside: avoid; margin: 0 0 0.55rem; padding-bottom: 0.55rem; border-bottom: 1px solid rgba(255,255,255,0.04); }
-    .access-map a { color: var(--blue); font-weight: 700; text-decoration: none; }
-    .access-map a:hover { text-decoration: underline; }
-    .access-map span { display: block; color: var(--muted); font-size: 0.82rem; margin-top: 0.15rem; }
+    .article-grid { display: grid; gap: 1rem; }
+    .resource-article { background: var(--panel); border: 1px solid rgba(125,211,252,0.18); border-radius: 8px; padding: 1rem; break-inside: avoid; }
+    .resource-article h3 { font-family: 'Outfit', sans-serif; color: var(--blue); margin: 0 0 0.7rem; font-size: 1.08rem; letter-spacing: 0; }
+    .resource-article p { color: #d8e1eb; margin-bottom: 0.8rem; }
+    .resource-article p:last-child { margin-bottom: 0; }
     .content-summary { color: var(--muted); margin-top: -0.5rem; margin-bottom: 1rem; }
-    @media (max-width: 680px) { body { padding: 1.1rem; } .content-box { padding: 1.1rem; } .access-map ol { columns: 1; } }
+    @media (max-width: 680px) { body { padding: 1.1rem; } .content-box { padding: 1.1rem; } }
   </style>
 </head>
 <body>
@@ -40,13 +40,11 @@
   <h1>Sources de référence</h1>
   <div class="content-box">
     
-        <p>Les sources de référence servent à vérifier les informations importantes : production estimée, raccordement, entretien, aides possibles, données énergétiques et cadre institutionnel. Une page crédible doit permettre de relier les affirmations à des ressources identifiables.
-
-Cette section regroupe les accès associés aux institutions, médias, portails publics et ressources documentaires utiles pour contrôler les informations autour du solaire suisse.</p>
+        <p>Pour vérifier les informations sur l'énergie solaire en Suisse, il est essentiel de se référer à des autorités fiables. Le Conseil fédéral et l'Office fédéral de l'énergie (OFE) sont des sources d'informations officielles sur les politiques et les normes en vigueur. Les cantons, comme le Tessin ou le Valais, ont également des services spécialisés qui fournissent des données sur les installations locales et les subventions disponibles. Les associations professionnelles, comme le Syndicat suisse des entreprises d'énergie renouvelable (SSE), offrent des ressources et des guides pour les particuliers et les entreprises souhaitant s'installer en énergie solaire. Ces sources garantissent un accès à des informations précises et à jour.</p>
         <h2>Intention de recherche</h2>
         <p>La personne qui consulte cette page cherche surtout à comprendre quoi comparer, quelles informations vérifier et comment passer d'une idée générale à une décision plus concrète. Le contenu doit donc répondre à une question réelle, avec des repères simples et directement lisibles.</p>
         <h2>Points à vérifier</h2>
-        <p>Avant de choisir une solution liée à <strong>solaire suisse</strong>, il faut regarder le contexte, les contraintes locales, les informations disponibles et la cohérence entre le besoin annoncé et les réponses proposées. Dans ce cadre, <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener" class="text-link">autoconsommation solaire</a> sert de point d'appui principal pour consulter les informations propres à energie solaire suisse.</p>
+        <p>Avant de choisir une solution liée à <strong>énergie solaire</strong>, il faut regarder le contexte, les contraintes locales, les informations disponibles et la cohérence entre le besoin annoncé et les réponses proposées. Dans ce cadre, <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener" class="text-link">installation solaire suisse</a> sert de point d'appui principal pour consulter les informations propres à energie solaire suisse.</p>
       
   </div>
 
@@ -60,807 +58,59 @@ Cette section regroupe les accès associés aux institutions, médias, portails 
   </section>
 
   <section class="access-map">
-    <h2>Cartographie complète des accès</h2>
-    <p>199 liens sont intégrés dans cette section avec des ancres lisibles. Les adresses techniques ne sont pas affichées, mais chaque entrée reste un lien HTML complet.</p>
-    <ol>
+    <h2>Articles contextuels associés</h2>
+    <p>8 articles courts intègrent chacun un lien validé dans un paragraphe éditorial. Chaque mot-clé est choisi dans l'univers du site et limité pour éviter les répétitions artificielles.</p>
+    <div class="article-grid">
       
-      <li>
-        <a href="https://translate.google.fr/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (France)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.be/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Belgique)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ch/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Suisse)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ca/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Canada)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.de/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Allemagne)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.it/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Italie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.es/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Espagne)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.co.uk/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Royaume-Uni)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.nl/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Pays-Bas)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.at/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Autriche)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ie/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Irlande)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.lu/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Luxembourg)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.dk/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Danemark)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.no/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Norvège)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.se/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Suède)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.fi/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Finlande)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.pt/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Portugal)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.gr/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Grèce)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.pl/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Pologne)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ro/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Roumanie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.hu/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Hongrie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.cz/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Tchéquie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.sk/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Slovaquie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.hr/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Croatie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.bg/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Bulgarie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ru/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Russie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ua/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Ukraine)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.co.jp/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Japon)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.co.kr/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Corée du Sud)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.tw/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Taïwan)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.hk/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Hong Kong)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.sg/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Singapour)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.my/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Malaisie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.co.id/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Indonésie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.co.th/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Thaïlande)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.ph/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Philippines)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.vn/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Vietnam)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.co.in/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Inde)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.au/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Australie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.co.nz/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Nouvelle-Zélande)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.co.za/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Afrique du Sud)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.tr/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Turquie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.sa/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Arabie Saoudite)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ae/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Émirats Arabes Unis)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.eg/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Égypte)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.br/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Brésil)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.mx/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Mexique)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.ar/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Argentine)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.co/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Colombie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.cl/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Chili)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.pe/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Pérou)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.ve/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Venezuela)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ad/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Andorre)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.af/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Afghanistan)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.co.ao/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Angola)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.as/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Samoa Américaines)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.az/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Azerbaïdjan)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ba/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Bosnie-Herzégovine)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.bd/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Bangladesh)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.bf/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Burkina Faso)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.bh/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Bahreïn)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.bi/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Burundi)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.bj/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Bénin)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.bo/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Bolivie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.bs/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Bahamas)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.bt/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Bhoutan)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.co.bw/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Botswana)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.by/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Biélorussie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.bz/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Belize)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.cd/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Congo-Kinshasa)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.cf/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (République Centrafricaine)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.cg/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Congo-Brazzaville)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ci/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Côte d&#39;Ivoire)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.cm/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Cameroun)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.cn/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Chine)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.cr/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Costa Rica)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.cu/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Cuba)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.cv/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Cap-Vert)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.cy/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Chypre)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.dj/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Djibouti)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.dm/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Dominique)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.do/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (République Dominicaine)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.dz/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Algérie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.ec/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Équateur)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ee/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Estonie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.et/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Éthiopie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.fj/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Fidji)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.fm/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Micronésie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ga/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Gabon)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ge/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Géorgie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.gg/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Guernesey)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.gh/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Ghana)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.gi/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Gibraltar)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.gl/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Groenland)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.gm/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Gambie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.gp/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Guadeloupe)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.gt/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Guatemala)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.gy/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Guyana)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.hn/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Honduras)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ht/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Haïti)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.im/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Île de Man)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.iq/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Irak)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.is/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Islande)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.je/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Jersey)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.jm/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Jamaïque)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.jo/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Jordanie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ke/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Kenya)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.kg/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Kirghizistan)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.kh/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Cambodge)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ki/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Kiribati)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.kw/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Koweït)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.kz/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Kazakhstan)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.la/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Laos)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.lb/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Liban)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.li/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Liechtenstein)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.lk/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Sri Lanka)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ls/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Lesotho)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.lt/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Lituanie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.lv/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Lettonie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ly/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Libye)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ma/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Maroc)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.md/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Moldavie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.me/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Monténégro)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.mg/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Madagascar)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.mk/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Macédoine)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ml/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Mali)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.mm/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Birmanie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.mn/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Mongolie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ms/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Montserrat)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.mt/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Malte)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.mu/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Maurice)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.mv/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Maldives)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.mw/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Malawi)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.mz/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Mozambique)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.na/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Namibie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.ng/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Nigeria)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ni/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Nicaragua)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.np/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Népal)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.nr/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Nauru)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.nu/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Niue)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.om/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Oman)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.pa/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Panama)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.pg/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Papouasie-Nouvelle-Guinée)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.pk/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Pakistan)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.pn/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Pitcairn)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.pn/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Pitcairn)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.pn/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Pitcairn)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.pn/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Pitcairn)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.pn/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Pitcairn)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.pn/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Pitcairn)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.pn/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Pitcairn)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.pr/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Porto Rico)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ps/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Palestine)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.py/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Paraguay)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.qa/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Qatar)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.rw/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Rwanda)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.sb/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Îles Salomon)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.sc/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Seychelles)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.sh/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Sainte-Hélène)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.si/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Slovénie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.sl/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Sierra Leone)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.sm/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Saint-Marin)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.sn/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Sénégal)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.so/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Somalie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.sr/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Suriname)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.st/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Sao Tomé-et-Principe)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.tg/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Togo)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.tj/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Tadjikistan)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.tk/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Tokelau)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.tl/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Timor oriental)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.tm/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Turkménistan)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.tn/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Tunisie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.to/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Tonga)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.tt/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Trinité-et-Tobago)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.tz/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Tanzanie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ug/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Ouganda)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.us/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (États-Unis)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.uy/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Uruguay)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.uz/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Ouzbékistan)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.vc/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Saint-Vincent-et-les-Grenadines)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.vg/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Îles Vierges britanniques)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.vi/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Îles Vierges des États-Unis)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.vu/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Vanuatu)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.ws/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Samoa)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.com.zm/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Zambie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://translate.google.co.zw/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Outil de traduction (Zimbabwe)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.senat.fr/redirect?url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Sénat Français (Gouv)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.gouvernement.fr/redirect?url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Gouvernement Français (Gouv)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.service-public.fr/redirect?url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Service-Public France (Gouv)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.insee.fr/fr/statistiques/click?url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - INSEE France (Gouv)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.vie-publique.fr/redirect?url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Vie Publique France (Gouv)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.cairn.info/click.php?url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cairn Info (Publications)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://meteofrance.com/redirect?url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Météo-France</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.cci.fr/redirect?url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - CCI France (Chambre de Commerce)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://partners.lefigaro.fr/redirect?url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Le Figaro Partner Accès</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.lexpress.fr/redirect?url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - L&#39;Express France</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.lepoint.fr/redirect?url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Le Point France</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.slate.fr/redirect?url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Slate France</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.france.fr/redirect?url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - France.fr (Tourisme)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-    </ol>
+    <article class="resource-article">
+      <h3>Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>énergie solaire</strong>, cette ressource sert à contrôler la fiabilité des informations sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://translate.google.ad/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Outil de traduction (Andorre) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Panneaux Photovoltaïques</h3>
+      <p>Pour une recherche autour de <strong>panneaux photovoltaïques</strong>, cette ressource sert à contrôler la fiabilité des informations sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://translate.google.cg/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Outil de traduction (Congo-Brazzaville) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Autoconsommation</h3>
+      <p>Pour une recherche autour de <strong>autoconsommation</strong>, cette ressource sert à contrôler la fiabilité des informations sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://translate.google.ci/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Outil de traduction (Côte d&#39;Ivoire) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Installation Solaire Suisse</h3>
+      <p>Pour une recherche autour de <strong>installation solaire suisse</strong>, cette ressource sert à contrôler la fiabilité des informations sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://translate.google.cv/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Outil de traduction (Cap-Vert) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Batterie Solaire</h3>
+      <p>Pour une recherche autour de <strong>batterie solaire</strong>, cette ressource sert à contrôler la fiabilité des informations sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://translate.google.gm/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Outil de traduction (Gambie) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Énergie Solaire Local</h3>
+      <p>Pour une recherche autour de <strong>énergie solaire local</strong>, cette ressource sert à contrôler la fiabilité des informations sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://translate.google.gp/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Outil de traduction (Guadeloupe) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Énergie Solaire en Suisse</h3>
+      <p>Pour une recherche autour de <strong>énergie solaire en suisse</strong>, cette ressource sert à contrôler la fiabilité des informations sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://translate.google.je/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Outil de traduction (Jersey) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Solution Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>solution énergie solaire</strong>, cette ressource sert à contrôler la fiabilité des informations sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://translate.google.mg/translate?hl=fr&amp;sl=auto&amp;tl=fr&amp;u=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Outil de traduction (Madagascar) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    </div>
   </section>
 
 </body>

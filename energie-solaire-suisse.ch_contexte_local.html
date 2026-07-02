@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Contexte local et usages - energie solaire suisse</title>
-  <meta name="description" content="Guide éditorial sur les panneaux solaires en Suisse, le nettoyage photovoltaïque, l’autoconsommation et les critères à vérifier avant de comparer les solutions.">
+  <meta name="description" content="Découvrez comment l&#39;énergie solaire s&#39;implante en Suisse. Découvrez les panneaux photovoltaïques, l&#39;autoconsommation et les solutions de stockage, avec des informations claires et des retours d&#39;expérience.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
@@ -19,18 +19,18 @@
     .nav-back:hover { text-decoration: underline; }
     .content-box { background: var(--panel); border: 1px solid var(--line); padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; color: #e6edf6; }
     .content-box p:last-child { margin-bottom: 0; }
-    .text-link, .reading-list a { color: var(--blue); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+    .text-link, .reading-list a, .resource-article a { color: var(--blue); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
     .reading-list, .access-map { background: #0f151e; border: 1px solid var(--line); border-radius: 8px; padding: 1.2rem 1.4rem; margin-bottom: 2.5rem; }
     .reading-list p { color: var(--muted); margin-bottom: 0.85rem; }
     .reading-list ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.45rem; }
     .access-map p { color: var(--muted); margin-bottom: 1rem; }
-    .access-map ol { margin: 0; padding-left: 1.2rem; columns: 2; column-gap: 2rem; }
-    .access-map li { break-inside: avoid; margin: 0 0 0.55rem; padding-bottom: 0.55rem; border-bottom: 1px solid rgba(255,255,255,0.04); }
-    .access-map a { color: var(--blue); font-weight: 700; text-decoration: none; }
-    .access-map a:hover { text-decoration: underline; }
-    .access-map span { display: block; color: var(--muted); font-size: 0.82rem; margin-top: 0.15rem; }
+    .article-grid { display: grid; gap: 1rem; }
+    .resource-article { background: var(--panel); border: 1px solid rgba(125,211,252,0.18); border-radius: 8px; padding: 1rem; break-inside: avoid; }
+    .resource-article h3 { font-family: 'Outfit', sans-serif; color: var(--blue); margin: 0 0 0.7rem; font-size: 1.08rem; letter-spacing: 0; }
+    .resource-article p { color: #d8e1eb; margin-bottom: 0.8rem; }
+    .resource-article p:last-child { margin-bottom: 0; }
     .content-summary { color: var(--muted); margin-top: -0.5rem; margin-bottom: 1rem; }
-    @media (max-width: 680px) { body { padding: 1.1rem; } .content-box { padding: 1.1rem; } .access-map ol { columns: 1; } }
+    @media (max-width: 680px) { body { padding: 1.1rem; } .content-box { padding: 1.1rem; } }
   </style>
 </head>
 <body>
@@ -40,13 +40,11 @@
   <h1>Contexte local et usages</h1>
   <div class="content-box">
     
-        <p>Le contexte local permet de comprendre les panneaux solaires en Suisse à partir des contraintes réelles : climat, toiture, altitude, règles communales, raccordement et habitudes de consommation. Une recherche locale doit aider l'utilisateur à passer d'une question générale à des informations utiles pour son canton ou sa situation.
-
-Pour les propriétaires, l'intention principale est souvent de savoir si une installation est pertinente, comment l'entretenir et quelles pages consulter pour avancer. Les liens de cette section regroupent donc les accès régionaux et francophones autour de cette intention.</p>
+        <p>Dans chaque canton suisse, l'adoption de l'énergie solaire se déroule selon des contextes spécifiques. Par exemple, les régions alpines, malgré leur exposition limitée au soleil, ont développé des solutions adaptées pour maximiser l'efficacité des panneaux. En revanche, les zones du nord ouest, plus ensoleillées, offrent des opportunités plus vastes pour l'installation de systèmes photovoltaïques. Ces différences influencent la conception des installations et les choix des utilisateurs, en fonction des conditions climatiques et géographiques locales. L'installation solaire suisse doit ainsi être personnalisée pour s'adapter aux spécificités de chaque région.</p>
         <h2>Intention de recherche</h2>
         <p>La personne qui consulte cette page cherche surtout à comprendre quoi comparer, quelles informations vérifier et comment passer d'une idée générale à une décision plus concrète. Le contenu doit donc répondre à une question réelle, avec des repères simples et directement lisibles.</p>
         <h2>Points à vérifier</h2>
-        <p>Avant de choisir une solution liée à <strong>solaire suisse</strong>, il faut regarder le contexte, les contraintes locales, les informations disponibles et la cohérence entre le besoin annoncé et les réponses proposées. Dans ce cadre, <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener" class="text-link">nettoyage photovoltaïque suisse</a> sert de point d'appui principal pour consulter les informations propres à energie solaire suisse.</p>
+        <p>Avant de choisir une solution liée à <strong>énergie solaire</strong>, il faut regarder le contexte, les contraintes locales, les informations disponibles et la cohérence entre le besoin annoncé et les réponses proposées. Dans ce cadre, <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener" class="text-link">batterie solaire</a> sert de point d'appui principal pour consulter les informations propres à energie solaire suisse.</p>
       
   </div>
 
@@ -60,675 +58,359 @@ Pour les propriétaires, l'intention principale est souvent de savoir si une ins
   </section>
 
   <section class="access-map">
-    <h2>Cartographie complète des accès</h2>
-    <p>166 liens sont intégrés dans cette section avec des ancres lisibles. Les adresses techniques ne sont pas affichées, mais chaque entrée reste un lien HTML complet.</p>
-    <ol>
+    <h2>Articles contextuels associés</h2>
+    <p>58 articles courts intègrent chacun un lien validé dans un paragraphe éditorial. Chaque mot-clé est choisi dans l'univers du site et limité pour éviter les répétitions artificielles.</p>
+    <div class="article-grid">
       
-      <li>
-        <a href="https://www.google.fr/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (France)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.fr/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (France)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.fr/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (France)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.fr/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (France)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.fr/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (France)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.fr/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (France)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.be/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Belgique)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.be/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Belgique)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.be/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Belgique)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.be/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Belgique)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.be/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Belgique)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.be/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Belgique)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.ch/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Suisse)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.ch/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Suisse)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.ch/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Suisse)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.ch/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Suisse)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.ch/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Suisse)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.ch/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Suisse)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.ca/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Canada)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.ca/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Canada)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.ca/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Canada)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.ca/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Canada)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.ca/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Canada)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.ca/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Canada)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.lu/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Luxembourg)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.lu/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Luxembourg)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.lu/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Luxembourg)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.lu/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Luxembourg)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.lu/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Luxembourg)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.lu/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Luxembourg)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.ad/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Andorre)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.ad/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Andorre)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.ad/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Andorre)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.ad/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Andorre)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.ad/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Andorre)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.ad/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Andorre)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.bi/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Burundi)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.bi/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Burundi)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.bi/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Burundi)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.bi/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Burundi)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.bi/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Burundi)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.bi/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Burundi)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.bj/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Bénin)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.bj/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Bénin)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.bj/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Bénin)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.bj/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Bénin)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.bj/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Bénin)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.bj/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Bénin)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.cd/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Congo-Kinshasa)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.cd/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Congo-Kinshasa)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.cd/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Congo-Kinshasa)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.cd/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Congo-Kinshasa)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.cd/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Congo-Kinshasa)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.cd/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Congo-Kinshasa)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.cg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Congo-Brazzaville)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.cg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Congo-Brazzaville)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.cg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Congo-Brazzaville)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.cg/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Congo-Brazzaville)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.cg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Congo-Brazzaville)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.cg/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Congo-Brazzaville)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.ci/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Côte d&#39;Ivoire)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.ci/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Côte d&#39;Ivoire)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.ci/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Côte d&#39;Ivoire)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.ci/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Côte d&#39;Ivoire)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.ci/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Côte d&#39;Ivoire)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.ci/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Côte d&#39;Ivoire)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.cm/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Cameroun)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.cm/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Cameroun)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.cm/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Cameroun)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.cm/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Cameroun)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.cm/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Cameroun)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.cm/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Cameroun)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.dz/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Algérie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.dz/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Algérie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.dz/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Algérie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.dz/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Algérie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.dz/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Algérie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.dz/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Algérie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.ga/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Gabon)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.ga/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Gabon)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.ga/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Gabon)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.ga/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Gabon)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.ga/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Gabon)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.ga/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Gabon)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.gp/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Guadeloupe)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.gp/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Guadeloupe)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.gp/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Guadeloupe)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.gp/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Guadeloupe)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.gp/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Guadeloupe)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.gp/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Guadeloupe)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.ht/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Haïti)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.ht/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Haïti)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.ht/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Haïti)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.ht/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Haïti)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.ht/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Haïti)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.ht/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Haïti)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.ma/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Maroc)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.ma/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Maroc)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.ma/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Maroc)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.ma/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Maroc)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.ma/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Maroc)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.ma/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Maroc)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.mg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Madagascar)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.mg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Madagascar)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.mg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Madagascar)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.mg/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Madagascar)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.mg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Madagascar)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.mg/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Madagascar)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.ml/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Mali)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.ml/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Mali)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.ml/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Mali)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.ml/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Mali)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.ml/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Mali)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.ml/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Mali)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.mu/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Maurice)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.mu/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Maurice)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.mu/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Maurice)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.mu/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Maurice)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.mu/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Maurice)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.mu/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Maurice)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.com.ng/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Nigeria)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.com.ng/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Nigeria)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.com.ng/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Nigeria)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.com.ng/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Nigeria)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.com.ng/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Nigeria)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.com.ng/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Nigeria)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.rw/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Rwanda)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.rw/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Rwanda)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.rw/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Rwanda)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.rw/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Rwanda)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.rw/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Rwanda)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.rw/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Rwanda)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.sn/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Sénégal)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.sn/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Sénégal)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.sn/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Sénégal)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.sn/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Sénégal)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.sn/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Sénégal)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.sn/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Sénégal)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.so/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Somalie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.so/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Somalie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.so/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Somalie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.so/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Somalie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.so/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Somalie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.so/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Somalie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.tg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Togo)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.tg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Togo)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.tg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Togo)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.tg/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Togo)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.tg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Togo)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.tg/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Togo)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.google.tn/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche locale (Tunisie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://images.google.tn/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Recherche d&#39;images thématiques (Tunisie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://maps.google.tn/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Cartographie locale (Tunisie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://scholar.google.tn/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Références universitaires (Tunisie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://finance.google.tn/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Indicateurs financiers régionaux (Tunisie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://news.google.tn/news/url?sa=t&amp;fd=R&amp;usg=AOvVaw&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Actualités régionales (Tunisie)</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://r.orange.fr/r?ref=seo&amp;url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Orange France Portal</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://portail.free.fr/redirect?url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Free France Portal</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.laposte.fr/particulier/redirect?url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - La Poste France</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.over-blog.com/link?url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Over-blog France Portail de lien</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.letudiant.fr/redirect?url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - L&#39;Étudiant France</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.dailymotion.com/thumbnail/150x150/redirect/https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Dailymotion France Video</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.pinterest.fr/r/?url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Pinterest France</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://www.pinterest.ca/r/?url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Pinterest Canada</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://fr.search.yahoo.com/search?p=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Yahoo France Search</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-      <li>
-        <a href="https://ca.search.yahoo.com/search?p=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">energie solaire suisse - Yahoo Canada Search</a>
-        <span>page cible : energie solaire suisse</span>
-      </li>
-    </ol>
+    <article class="resource-article">
+      <h3>Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>énergie solaire</strong>, cette ressource sert à comparer plusieurs résultats publics sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://www.google.ch/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche locale (Suisse) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Panneaux Photovoltaïques</h3>
+      <p>Pour une recherche autour de <strong>panneaux photovoltaïques</strong>, cette ressource sert à observer les usages et les visuels associés sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://images.google.ch/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche d&#39;images thématiques (Suisse) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Autoconsommation</h3>
+      <p>Pour une recherche autour de <strong>autoconsommation</strong>, cette ressource sert à repérer une information locale sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://maps.google.ch/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Cartographie locale (Suisse) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Installation Solaire Suisse</h3>
+      <p>Pour une recherche autour de <strong>installation solaire suisse</strong>, cette ressource sert à vérifier un angle documentaire sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://scholar.google.ch/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Références universitaires (Suisse) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Batterie Solaire</h3>
+      <p>Pour une recherche autour de <strong>batterie solaire</strong>, cette ressource sert à comparer plusieurs résultats publics sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://www.google.fr/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche locale (France) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Énergie Solaire Local</h3>
+      <p>Pour une recherche autour de <strong>énergie solaire local</strong>, cette ressource sert à observer les usages et les visuels associés sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://images.google.fr/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche d&#39;images thématiques (France) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Énergie Solaire en Suisse</h3>
+      <p>Pour une recherche autour de <strong>énergie solaire en suisse</strong>, cette ressource sert à repérer une information locale sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://maps.google.fr/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Cartographie locale (France) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Solution Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>solution énergie solaire</strong>, cette ressource sert à comparer plusieurs résultats publics sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://www.google.be/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche locale (Belgique) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Conseil Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>conseil énergie solaire</strong>, cette ressource sert à vérifier un angle documentaire sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://scholar.google.be/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Références universitaires (Belgique) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Comparatif Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>comparatif énergie solaire</strong>, cette ressource sert à comparer plusieurs résultats publics sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://www.google.lu/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche locale (Luxembourg) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Information Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>information énergie solaire</strong>, cette ressource sert à observer les usages et les visuels associés sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://images.google.lu/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche d&#39;images thématiques (Luxembourg) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Guide Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>guide énergie solaire</strong>, cette ressource sert à repérer une information locale sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://maps.google.lu/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Cartographie locale (Luxembourg) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Prix Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>prix énergie solaire</strong>, cette ressource sert à vérifier un angle documentaire sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://scholar.google.lu/scholar?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Références universitaires (Luxembourg) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Installation Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>installation énergie solaire</strong>, cette ressource sert à repérer une information locale sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://maps.google.ad/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Cartographie locale (Andorre) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Service Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>service énergie solaire</strong>, cette ressource sert à comparer plusieurs résultats publics sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://www.google.gg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche locale (Guernesey) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Avis Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>avis énergie solaire</strong>, cette ressource sert à observer les usages et les visuels associés sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://images.google.gg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche d&#39;images thématiques (Guernesey) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Devis Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>devis énergie solaire</strong>, cette ressource sert à repérer une information locale sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://maps.google.gg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Cartographie locale (Guernesey) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Expert Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>expert énergie solaire</strong>, cette ressource sert à comparer plusieurs résultats publics sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://www.google.je/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche locale (Jersey) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>énergie solaire</strong>, cette ressource sert à observer les usages et les visuels associés sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://images.google.je/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche d&#39;images thématiques (Jersey) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Panneaux Photovoltaïques</h3>
+      <p>Pour une recherche autour de <strong>panneaux photovoltaïques</strong>, cette ressource sert à repérer une information locale sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://maps.google.je/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Cartographie locale (Jersey) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Autoconsommation</h3>
+      <p>Pour une recherche autour de <strong>autoconsommation</strong>, cette ressource sert à croiser les informations avec une source institutionnelle sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://www.vie-publique.fr/redirect?url=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Vie Publique France (Gouv) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Installation Solaire Suisse</h3>
+      <p>Pour une recherche autour de <strong>installation solaire suisse</strong>, cette ressource sert à comparer plusieurs résultats publics sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://www.google.ca/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche locale (Canada) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Batterie Solaire</h3>
+      <p>Pour une recherche autour de <strong>batterie solaire</strong>, cette ressource sert à observer les usages et les visuels associés sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://images.google.ca/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche d&#39;images thématiques (Canada) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Énergie Solaire Local</h3>
+      <p>Pour une recherche autour de <strong>énergie solaire local</strong>, cette ressource sert à repérer une information locale sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://maps.google.ca/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Cartographie locale (Canada) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Énergie Solaire en Suisse</h3>
+      <p>Pour une recherche autour de <strong>énergie solaire en suisse</strong>, cette ressource sert à comparer plusieurs résultats publics sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://www.google.gp/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche locale (Guadeloupe) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Solution Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>solution énergie solaire</strong>, cette ressource sert à observer les usages et les visuels associés sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://images.google.gp/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche d&#39;images thématiques (Guadeloupe) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Conseil Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>conseil énergie solaire</strong>, cette ressource sert à repérer une information locale sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://maps.google.gp/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Cartographie locale (Guadeloupe) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Comparatif Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>comparatif énergie solaire</strong>, cette ressource sert à observer les usages et les visuels associés sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://images.google.ht/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche d&#39;images thématiques (Haïti) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Information Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>information énergie solaire</strong>, cette ressource sert à repérer une information locale sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://maps.google.ht/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Cartographie locale (Haïti) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Guide Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>guide énergie solaire</strong>, cette ressource sert à comparer plusieurs résultats publics sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://www.google.cg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche locale (Congo-Brazzaville) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Prix Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>prix énergie solaire</strong>, cette ressource sert à observer les usages et les visuels associés sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://images.google.cg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche d&#39;images thématiques (Congo-Brazzaville) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Installation Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>installation énergie solaire</strong>, cette ressource sert à repérer une information locale sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://maps.google.cg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Cartographie locale (Congo-Brazzaville) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Service Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>service énergie solaire</strong>, cette ressource sert à comparer plusieurs résultats publics sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://www.google.ci/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche locale (Côte d&#39;Ivoire) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Avis Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>avis énergie solaire</strong>, cette ressource sert à repérer une information locale sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://maps.google.ci/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Cartographie locale (Côte d&#39;Ivoire) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Devis Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>devis énergie solaire</strong>, cette ressource sert à comparer plusieurs résultats publics sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://www.google.cm/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche locale (Cameroun) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Expert Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>expert énergie solaire</strong>, cette ressource sert à observer les usages et les visuels associés sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://images.google.cm/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche d&#39;images thématiques (Cameroun) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>énergie solaire</strong>, cette ressource sert à repérer une information locale sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://maps.google.cm/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Cartographie locale (Cameroun) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Panneaux Photovoltaïques</h3>
+      <p>Pour une recherche autour de <strong>panneaux photovoltaïques</strong>, cette ressource sert à comparer plusieurs résultats publics sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://www.google.dz/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche locale (Algérie) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Autoconsommation</h3>
+      <p>Pour une recherche autour de <strong>autoconsommation</strong>, cette ressource sert à observer les usages et les visuels associés sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://images.google.dz/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche d&#39;images thématiques (Algérie) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Installation Solaire Suisse</h3>
+      <p>Pour une recherche autour de <strong>installation solaire suisse</strong>, cette ressource sert à repérer une information locale sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://maps.google.dz/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Cartographie locale (Algérie) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Batterie Solaire</h3>
+      <p>Pour une recherche autour de <strong>batterie solaire</strong>, cette ressource sert à comparer plusieurs résultats publics sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://www.google.ga/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche locale (Gabon) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Énergie Solaire Local</h3>
+      <p>Pour une recherche autour de <strong>énergie solaire local</strong>, cette ressource sert à observer les usages et les visuels associés sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://images.google.ga/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche d&#39;images thématiques (Gabon) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Énergie Solaire en Suisse</h3>
+      <p>Pour une recherche autour de <strong>énergie solaire en suisse</strong>, cette ressource sert à comparer plusieurs résultats publics sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://www.google.mg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche locale (Madagascar) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Solution Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>solution énergie solaire</strong>, cette ressource sert à observer les usages et les visuels associés sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://images.google.mg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche d&#39;images thématiques (Madagascar) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Conseil Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>conseil énergie solaire</strong>, cette ressource sert à comparer plusieurs résultats publics sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://www.google.ml/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche locale (Mali) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Comparatif Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>comparatif énergie solaire</strong>, cette ressource sert à observer les usages et les visuels associés sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://images.google.ml/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche d&#39;images thématiques (Mali) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Information Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>information énergie solaire</strong>, cette ressource sert à comparer plusieurs résultats publics sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://www.google.mu/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche locale (Maurice) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Guide Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>guide énergie solaire</strong>, cette ressource sert à observer les usages et les visuels associés sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://images.google.mu/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche d&#39;images thématiques (Maurice) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Prix Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>prix énergie solaire</strong>, cette ressource sert à repérer une information locale sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://maps.google.mu/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Cartographie locale (Maurice) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Installation Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>installation énergie solaire</strong>, cette ressource sert à comparer plusieurs résultats publics sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://www.google.sn/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche locale (Sénégal) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Service Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>service énergie solaire</strong>, cette ressource sert à observer les usages et les visuels associés sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://images.google.sn/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche d&#39;images thématiques (Sénégal) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Avis Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>avis énergie solaire</strong>, cette ressource sert à repérer une information locale sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://maps.google.sn/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Cartographie locale (Sénégal) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Devis Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>devis énergie solaire</strong>, cette ressource sert à comparer plusieurs résultats publics sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://www.google.tg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche locale (Togo) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Expert Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>expert énergie solaire</strong>, cette ressource sert à observer les usages et les visuels associés sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://images.google.tg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche d&#39;images thématiques (Togo) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Énergie Solaire</h3>
+      <p>Pour une recherche autour de <strong>énergie solaire</strong>, cette ressource sert à repérer une information locale sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://maps.google.tg/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Cartographie locale (Togo) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Panneaux Photovoltaïques</h3>
+      <p>Pour une recherche autour de <strong>panneaux photovoltaïques</strong>, cette ressource sert à comparer plusieurs résultats publics sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://www.google.tn/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche locale (Tunisie) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Autoconsommation</h3>
+      <p>Pour une recherche autour de <strong>autoconsommation</strong>, cette ressource sert à observer les usages et les visuels associés sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://images.google.tn/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Recherche d&#39;images thématiques (Tunisie) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    <article class="resource-article">
+      <h3>Installation Solaire Suisse</h3>
+      <p>Pour une recherche autour de <strong>installation solaire suisse</strong>, cette ressource sert à repérer une information locale sans sortir du contexte de l'activité traitée.</p>
+      <p>Elle complète la lecture en donnant un point d'accès public, utile pour comparer les informations, vérifier le vocabulaire employé et garder une approche cohérente avec les besoins réels des internautes.</p>
+      <p>Accès conseillé : <a href="https://maps.google.tn/url?q=https%3A%2F%2Fenergie-solaire-suisse.ch%2F" target="_blank" rel="noopener">Cartographie locale (Tunisie) - energie solaire suisse</a>. Page cible suivie : <a href="https://energie-solaire-suisse.ch/" target="_blank" rel="noopener">energie solaire suisse</a>.</p>
+    </article>
+    </div>
   </section>
 
 </body>
